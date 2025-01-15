@@ -1,5 +1,5 @@
 /* General Reset */
-* {
+body, h1, h2, p, ul, li, a {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,112 +8,99 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    color: #333;
-    background-color: #f9f9f9;
 }
 
-/* Navbar */
+/* Navbar Styles */
 .navbar {
-    background-color: #004080;
+    background-color: #f4f4f4;
     padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.navbar ul {
-    display: flex;
+.navbar nav ul {
     list-style: none;
-    justify-content: center;
+    display: flex;
+    justify-content: space-around;
 }
 
-.navbar ul li {
-    margin: 0 15px;
-}
-
-.navbar ul li a {
-    color: #fff;
+.navbar nav ul li a {
     text-decoration: none;
+    color: #333;
     font-weight: bold;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s;
 }
 
-.navbar ul li a:hover {
-    text-decoration: underline;
+.navbar nav ul li a:hover {
+    color: #007BFF;
 }
 
-/* Hero Section */
-.hero {
-    background: url('hero-image.jpg') no-repeat center center/cover;
-    color: #fff;
+/* Landing Page Background */
+.background {
+    background: linear-gradient(to right, #e0f7fa, #80deea);
     text-align: center;
-    padding: 100px 20px;
+    padding: 3rem 1rem;
 }
 
-.hero-content h1 {
+.title h1 {
     font-size: 2.5rem;
-    margin-bottom: 10px;
+    color: #333;
+    margin-bottom: 1rem;
 }
 
-.hero-content p {
+.interactive-question p {
     font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 2rem;
 }
 
-/* Sections */
-.section {
-    padding: 50px 20px;
-    text-align: center;
+/* Icons */
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
 }
 
-.section h2 {
+.icons .icon {
     font-size: 2rem;
-    margin-bottom: 20px;
+    color: #333;
+    cursor: pointer;
+    transition: color 0.3s;
 }
 
-.section p {
-    margin-bottom: 20px;
+.icons .icon:hover {
+    color: #007BFF;
+}
+
+/* Infos Section */
+.infos {
+    background-color: #fff;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.summary h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.summary p {
     font-size: 1rem;
+    color: #555;
+    margin-bottom: 1.5rem;
 }
 
-.resources, .education-materials {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.resource-item, .material {
-    background: #fff;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    width: 200px;
-    text-align: center;
-}
-
-.exhibit-preview {
-    background: #ddd;
-    padding: 20px;
-    border-radius: 5px;
-    font-size: 1.2rem;
-    font-weight: bold;
-}
-
-/* Footer */
-.footer {
-    background-color: #004080;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-}
-
-.footer .social-links {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-}
-
-.footer .social-links li {
-    margin: 0 10px;
-}
-
-.footer .social-links li a {
-    color: #fff;
+.view-more {
+    display: inline-block;
     text-decoration: none;
+    color: #fff;
+    background-color: #007BFF;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.view-more:hover {
+    background-color: #0056b3;
 }
